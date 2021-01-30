@@ -1,0 +1,6 @@
+int32 ComNum
+float32 GRIPPER_CLOSED
+float32 gripper_depth
+float32 displacementUp
+float32 displacementDown
+geometry_msgs/Pose pose

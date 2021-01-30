@@ -1,0 +1,11 @@
+bool request_for_result
+
+---
+
+float64 pox_x   
+float64 pox_y
+float64 pox_z
+
+float64 angle_1   
+float64 angle_2
+float64 angle_3

@@ -1,0 +1,41 @@
+<robot name="cap_screw_size4">
+  <link name="cap_screw_size4">
+
+    <!-- rosrun gazebo_ros spawn_model -file $(rospack find ur5_single_arm_tufts)/urdf/objects/table.urdf -urdf -x 0.5 -y -0 -z 0.75 -model table -->
+    
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <mass value="0.55"/>
+      <inertia
+        ixx="0.000189583" ixy="0.0" ixz="0.0"
+        iyy="0.000189583" iyz="0.0"
+        izz="0.0003125"/>
+    </inertial>
+
+    <visual>
+      <geometry>
+        <!--    <mesh filename="package://ur5_single_arm_tufts/urdf/objects/capscrew_size4.obj"/> -->>
+        <mesh filename="package://ur5_single_arm_tufts/urdf/objects/capscrew_size4_new4_3.stl"/>
+      </geometry>
+    </visual>
+
+    <collision>
+      <geometry>
+        <mesh filename="package://ur5_single_arm_tufts/urdf/objects/capscrew_size4_new4_3.stl"/>
+            <!--  scale = 0.045 -->
+      </geometry>
+    </collision>
+
+  </link>
+
+  <gazebo reference="cap_screw_size4">
+    <material>Gazebo/Blue</material>
+  </gazebo> 
+
+  <gazebo>
+     <mu1>100000</mu1>
+     <mu2>100000</mu2><!-- 
+     <static>true</static> -->
+  </gazebo>
+
+</robot>
