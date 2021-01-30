@@ -3,6 +3,7 @@
 1. Ubuntu 16.04
 2. ROS Kinetic
 3. Gazebo 7.x
+4. OpencV2
 
 
 
